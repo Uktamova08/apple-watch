@@ -90,12 +90,19 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 22.5px */
     text-decoration: none;
+    transition: border-bottom 0.2s ease;
+    padding-bottom: 5px;
 }
 
 .header-link:not(:last-child) {
     margin-right: 30px;
+}
+
+.header-link:hover {
+    width: 41px;
+    height: 3px;
+    border-bottom: 3px solid #333;
 }
 
 .header-input {
@@ -123,8 +130,7 @@ img {
     padding-bottom: 70px;
 }
 
-.headernav {
-}
+.headernav {}
 
 .header-heading {
     color: #000;
@@ -173,8 +179,7 @@ img {
     padding: 12px;
     transition: color 0.4s ease,
         background-color 0.4s ease,
-        border 0.4s ease,
-        opacity 0.4s;
+        border 0.4s ease;
 }
 
 .header-button:hover {
@@ -186,7 +191,6 @@ img {
 .header-button:active {
     background-color: #C9514C;
     color: #fff;
-    opacity: 0.6;
 }
 
 .main-content {}
@@ -292,8 +296,7 @@ img {
     background: #EA625C;
     transition: color 0.4s ease,
         background-color 0.4s ease,
-        border 0.4s ease,
-        opacity 0.4s;
+        border 0.4s ease;
 }
 
 .main-inner-button:hover {
@@ -305,7 +308,6 @@ img {
 .main-inner-button:active {
     background-color: #C9514C;
     color: #fff;
-    opacity: 0.6;
 }
 
 .watch-in-hand {
@@ -381,8 +383,7 @@ img {
     background-color: #EA625C;
     transition: color 0.4s ease,
         background-color 0.4s ease,
-        border 0.4s ease,
-        opacity 0.4s;
+        border 0.4s ease;
 }
 
 .footer-button:hover {
@@ -394,5 +395,4 @@ img {
 .footer-button:active {
     background-color: #C9514C;
     color: #fff;
-    opacity: 0.6;
 }
