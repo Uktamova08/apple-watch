@@ -45,7 +45,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -76,7 +76,7 @@ img {
     background-position: left calc(50% + 473px) top 0;
 }
 
-.hr {
+.header-line {
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
@@ -137,7 +137,7 @@ img {
 
 .header-input {
     border: none;
-    width: 153px;
+    width: 165px;
     height: 23px;
     font-family: Roboto;
     font-size: 15px;
