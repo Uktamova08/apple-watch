@@ -32,7 +32,13 @@ html {
 *::after {
     box-sizing: inherit;
 }
+*:focus {
+    outline-width: 2px;
+    outline-style: dashed;
+    outline-color: deepskyblue;
+    outline-offset: 5px;
 
+}
 body {
     height: 100%;
     display: flex;
@@ -43,8 +49,8 @@ body {
 .container {
     width: 100%;
     max-width: 1250px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 125px;
+    padding-right: 125px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -78,9 +84,6 @@ img {
     height: 41px;
 }
 
-.header-list {}
-
-
 .header-link {
     cursor: pointer;
     color: #333;
@@ -92,7 +95,9 @@ img {
     line-height: 150%;
     text-decoration: none;
     transition: border-bottom 0.2s ease;
+    padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
 }
 
 .header-link:not(:last-child) {
@@ -113,6 +118,7 @@ img {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
+    padding-top: 6px;
     padding-bottom: 6px;
     border-bottom: 1px solid #333;
     color: #666;
@@ -128,9 +134,12 @@ img {
 .header-wrapper {
     padding-top: 85px;
     padding-bottom: 70px;
+    margin-right: 245px;
 }
 
-.headernav {}
+.header-content {
+    display: flex;
+}
 
 .header-heading {
     color: #000;
@@ -177,6 +186,7 @@ img {
     text-transform: uppercase;
     background-color: #EA625C;
     padding: 12px;
+    border: 2px solid #C9514C;
     transition: color 0.4s ease,
         background-color 0.4s ease,
         border 0.4s ease;
@@ -193,7 +203,14 @@ img {
     color: #fff;
 }
 
-.main-content {}
+.watch-images {
+    display: flex;
+    background-image: url(/img/intro-bg.png);
+    background-repeat: no-repeat;
+    width: 587px;
+    height: 565px;
+
+}
 
 .main-wrapper {
     display: flex;
@@ -234,6 +251,7 @@ img {
     width: 8px;
     height: 8px;
     margin: 0;
+    border: none;
     background-color: #ddd;
     box-shadow: 18px 0 0 #ddd,
         36px 0 0 #ddd;
@@ -241,6 +259,7 @@ img {
 
 .span {
     display: flex;
+    cursor: pointer;
     align-items: center;
     color: #EA625C;
     font-family: Roboto;
@@ -249,6 +268,7 @@ img {
     font-weight: 700;
     line-height: 160%;
     text-transform: uppercase;
+
 }
 
 .span::before {
@@ -257,6 +277,11 @@ img {
     height: 2px;
     background-color: #EA625C;
     margin-right: 10px;
+    transition: width 0.4s ease;
+}
+
+.span:hover::before {
+    width: 60px;
 }
 
 .main-inner {
@@ -294,6 +319,7 @@ img {
     line-height: 150%;
     text-transform: uppercase;
     background: #EA625C;
+    border: 2px solid #C9514C;
     transition: color 0.4s ease,
         background-color 0.4s ease,
         border 0.4s ease;
@@ -381,6 +407,7 @@ img {
     line-height: 150%;
     text-transform: uppercase;
     background-color: #EA625C;
+    border: 2px solid #C9514C;
     transition: color 0.4s ease,
         background-color 0.4s ease,
         border 0.4s ease;
@@ -388,7 +415,7 @@ img {
 
 .footer-button:hover {
     color: #C9514C;
-    background-color: #fff;
+    background-color: transparent;
     border: 2px solid #C9514C;
 }
 
